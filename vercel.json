@@ -1,18 +1,13 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/index.php",
-      "use": "@vercel/php",
-      "config": {
-        "buildCommand": "composer install --ignore-platform-reqs"
-      }
-    }
-  ],
   "routes": [
     {
       "src": "/(.*)",
       "dest": "/api/index.php"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.php"
     }
   ],
   "env": {
