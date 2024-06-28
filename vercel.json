@@ -1,10 +1,11 @@
 {
-    "functions": {
-      "api/*.php": {
-        "runtime": "vercel-php@0.7.1"
+  "functions": {
+    "api/*.php": {
+      "runtime": "vercel-php@0.7.1",
+      "config": {
+        "buildCommand": "composer install"
       }
-    },
-    "routes": [
-      { "src": "/(.*)",  "dest": "/api/index.php" }
-    ]
-  }
+    }
+  },
+  "routes": [{ "src": "/(.*)", "dest": "/api/index.php" }]
+}
