@@ -129,3 +129,4 @@ nb-configuration.xml
 /.phpunit.*.cache
 
 *.zip
+.vercel
