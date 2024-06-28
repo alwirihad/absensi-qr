@@ -3,11 +3,11 @@
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/api/index.php"
+      "dest": "/app/app.php"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.php"
+      "dest": "/app.php"
     }
   ],
   "env": {
